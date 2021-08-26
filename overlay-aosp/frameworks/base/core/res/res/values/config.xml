@@ -3,4 +3,7 @@
     <!-- Default fod pressed color -->
     <integer name="config_fod_pressed_color">2</integer>
 
+    <!-- Whether to call dimlayer during onPress while screen off FOD is turned on -->
+    <bool name="config_disableCallingDimlayerInOnShowWithScreenOffFOD">true</bool>
+
 </resources>
