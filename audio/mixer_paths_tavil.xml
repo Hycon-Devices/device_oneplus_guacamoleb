@@ -885,7 +885,6 @@
     <path name="low-latency-playback">
         <ctl name="SLIMBUS_0_RX Audio Mixer MultiMedia5" value="1" />
     </path>
-
 <!-- #ifdef VENDOR_EDIT -->
 <!-- wangdongdong@MultiMediaService,2016/10/01,add i2s path-->
     <path name="low-latency-playback quat_i2s">
@@ -1119,14 +1118,12 @@
         <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia4" value="1" />
     <!-- #endif -->
     </path>
-
 <!-- #ifdef VENDOR_EDIT -->
 <!-- wangdongdong@MultiMediaService,2016/10/01,add i2s path-->
     <path name="compress-offload-playback quat_i2s">
         <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia4" value="1" />
     </path>
 <!--#endif-->
-
     <path name="compress-offload-playback speaker-protected">
         <path name="compress-offload-playback" />
     </path>
@@ -2901,7 +2898,7 @@
 <!-- ifdef VENDOR_EDIT -->
 <!-- liuhaituo@MM.Audio, 2019/12/31, Add for Sva record training wav -->
     <path name="sva-re-mic">
-        <path name="amic1" />
+        <path name="amic4" />
     </path>
 <!-- endif -->
 
@@ -3116,7 +3113,7 @@
         <ctl name="DEC0 Volume" value="84" />
     <!-- #ifdef VENDOR_EDIT liuhaituo Reduce 3db(12->10) adc gain to solve the problem
           of headset mode voip call tx topping-->
-             <ctl name="ADC2 Volume" value="10" />
+        <ctl name="ADC2 Volume" value="10" />
     <!-- #endif -->
     </path>
 
@@ -3506,6 +3503,7 @@
     <path name="speaker-mic-wechat-front">
         <ctl name="AIF1_CAP Mixer SLIM TX5" value="1" />
         <ctl name="AIF1_CAP Mixer SLIM TX6" value="1" />
+        <ctl name="SLIM_0_TX Channels" value="Two" />
         <ctl name="CDC_IF TX5 MUX" value="DEC5" />
         <ctl name="ADC MUX5" value="AMIC" />
         <ctl name="AMIC MUX5" value="ADC3" />
@@ -3528,9 +3526,6 @@
         <ctl name="ADC MUX6" value="AMIC" />
         <ctl name="AMIC MUX6" value="ADC4" />
         <ctl name="AMIC4_5 SEL" value="AMIC4" />
-        <ctl name="CDC_IF TX7 MUX" value="DEC7" />
-        <ctl name="ADC MUX7" value="AMIC" />
-        <ctl name="AMIC MUX7" value="ADC1" />
         <ctl name="ADC3 Volume" value="6" />
         <ctl name="ADC4 Volume" value="6" />
     </path>
